@@ -1,7 +1,14 @@
 function isPalindrome(word) {
-  // Write your algorithm here
-}
+  let reverseWord = word.split("").reverse().join("");
+  if (word === reverseWord) {
+    return true;
+    console.log('It is a palindrome');
+  } else {
+    return false;
+    console.log('It is not a palindrome');
+  }
 
+}
 /* 
   Add your pseudocode here
 */
